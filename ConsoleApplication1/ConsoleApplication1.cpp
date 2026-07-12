@@ -6,6 +6,7 @@ int main()
 {
     int num;
     int num1;
+    int i = 0;
     char oper;
     std::cout << "welcome in calculator \n";
     std::cout << "print first number \n";
@@ -14,20 +15,20 @@ int main()
     std::cin >> num1;
     std::cout << "print  operation (+,-,/,*) \n";
     std::cin >> oper;
-    
-    if (oper == '+')
-        std::cout << num + num1;
+    while (i == 0) {
+        if (oper == '+')
+            std::cout << num + num1;
 
-    else if (oper == '-')
-        std::cout << num - num1; 
+        else if (oper == '-')
+            std::cout << num - num1;
 
-    else if (oper == '*')
-        std::cout << num * num1;
+        else if (oper == '*')
+            std::cout << num * num1;
 
-    else if (oper == '/')
-        std::cout << num / num1;
+        else if (oper == '/')
+            std::cout << num / num1;
 
-
+    }
 }
 
 
