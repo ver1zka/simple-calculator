@@ -8,16 +8,18 @@ int main()
     int num1;
     char oper;
 
-
+    std::cout << "print first number \n";
     std::cin >> num;
+    std::cout << "print second number \n";
     std::cin >> num1;
+    std::cout << "print  operation (+,-,/,*) \n";
     std::cin >> oper;
 
     if (oper == '+')
         std::cout << num + num1;
 
     else if (oper == '-')
-        std::cout << num - num1;
+        std::cout << num - num1; 
 
     else if (oper == '*')
         std::cout << num * num1;
